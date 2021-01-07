@@ -1,9 +1,17 @@
 public class Book {
-  public String title;
-  public double price;
+  private String title;
+  private double price;
 
-  Book() {
-    this.title = "";
-    this.price = 1;
+  Book(String title , double price) {
+    this.title = title;
+    this.price = price;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public double getPrice() {
+    return price;
   }
 }
